@@ -1,0 +1,121 @@
+body{
+    background-color:rgb(128, 97, 76);
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    background-image: url('images/bg.jpg');
+    background-size: auto;
+    background-position: center;
+}
+
+h1{
+    color: rgb(214, 207, 207);
+}
+
+img.recipe{
+    width: 400px;
+}
+
+/* These are our menu styles */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color:rgb(214, 207, 207);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color:rgb(32, 30, 28);
+}
+
+/* This is the style for the parent div */
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* This is the style for the child div */
+.column{
+    flex: 1;
+    background-color:rgb(99, 96, 94);
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 2px 4px rgb(32, 30, 28);
+    text-align: center;
+    color:rgb(32, 30, 28);
+}
+
+.column + .column{
+    margin-left: 20px;
+}
+
+@media (max-width: 600px){
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column + .column{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+/* Build a semi transparent box */
+.content{
+    background-color:rgba(59, 10, 14, .75);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Table styles */
+table{
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    color:rgb(32, 30, 28);
+}
+
+tr{
+    border-bottom: 1px solid black;
+}
+
+td{
+    padding: 10px;
+}
+
+tr:nth-child(odd){
+    background-color:rgb(201, 196, 192);
+}
+
+tr:hover{
+    background-color:rgb(32, 30, 28);
+    color: whitesmoke;
+}
+
+.recipeDiv{
+    margin: 0 auto;
+    width: 50%;
+    color:rgb(32, 30, 28);
+    background-color:rgb(201, 196, 192);
+    padding: 20px;
+    border-radius: 15px;
+}
